@@ -14,7 +14,6 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.5f1</UnityVersion>
@@ -77,22 +76,8 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\01ngui_coverflow\Assets\coverFlowUnit.cs" />
-    <Compile Include="Assets\03ngui_drag_and_drop\Assets\scripts\LZCursor.cs" />
-    <Compile Include="Assets\03ngui_drag_and_drop\Assets\scripts\LZInventoryManager.cs" />
-    <Compile Include="Assets\03ngui_drag_and_drop\Assets\scripts\LZItemData.cs" />
-    <Compile Include="Assets\03ngui_drag_and_drop\Assets\scripts\LZItemSlot.cs" />
-    <Compile Include="Assets\04ngui_defence_gui\Assets\Scripts\DragMap.cs" />
-    <Compile Include="Assets\04ngui_defence_gui\Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\04ngui_defence_gui\Assets\Scripts\TileUnit.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />

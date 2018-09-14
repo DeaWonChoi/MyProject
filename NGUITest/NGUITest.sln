@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGUITest", "NGUITest.csproj", "{0E7BCEBE-F4F9-2D25-2CEF-3DB5200C2003}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGUITest.Editor", "NGUITest.Editor.csproj", "{7B5EDD6B-89F6-D4EF-0B5E-83FDE0E3D95B}"
