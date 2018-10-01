@@ -1,0 +1,63 @@
+diff a/RedTheSettlers/Assets/2.Scripts/Camera/CameraMoving/CameraMoving.cs b/RedTheSettlers/Assets/2.Scripts/Camera/CameraMoving/CameraMoving.cs	(rejected hunks)
+@@ -30,48 +30,48 @@
+ 
+     public class FollowMoving : CameraMoving
+     {
++        Transform targetTransform;
+         Vector3 cameraOffset;
+         float smooth = 0.2f;
+-        float hDist = 2f;
+-        float vDist = 2f;
+ 
+ 
+         Animator animator;
+         ICameraState currentState;
+-        CameraStateType cameraStateType;
++        CameraStateType nowStateType;
+ 
+         public FollowMoving(GameObject cameraObject)
+         {
+             animator = cameraObject.GetComponentInChildren<Animator>();
+             this.cameraObject = cameraObject;
+-            //cameraOffset = cameraObject.transform.position - targetTransform.position;
+-            cameraOffset = new Vector3(0.3f, vDist, hDist);
++            FindTarget();
++            cameraOffset = cameraObject.transform.position - targetTransform.position;
++
+ 
+             currentState = new CameraNomalState(animator);
+         }
+ 
+-        public override void Moving(Vector3 vector3, CameraStateType newCameraStateType)
++        public override void Moving(Vector3 vector3, CameraStateType cameraState)
+         {
+-            if (cameraStateType != newCameraStateType)
++            if (nowStateType != cameraState)
+             {
+-                ChangeState(newCameraStateType);
++                ChangeState(cameraState);
+                 currentState.CameraBehavior();
+             }
+-            if (vector3 == null)
++            if (targetTransform == null)
+             {
+                 Debug.Log("타겟이 없어서 타겟을 찾는다");
+-                return;
++                FindTarget();
+             }
+             else
+             {
+-                Vector3 newPos = vector3 + cameraOffset;
++                Vector3 newPos = targetTransform.position + cameraOffset;
+                 cameraObject.transform.position = Vector3.Slerp(cameraObject.transform.position, newPos, smooth);
+             }
+         }
+ 
+-        private void ChangeState(CameraStateType cameraStateType)
++        private void ChangeState(CameraStateType cameraState)
+         {
+-            switch (cameraStateType)
++            switch (cameraState)
+             {
+                 case CameraStateType.Idle:
+                     currentState = new CameraNomalState(animator);

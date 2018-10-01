@@ -1,0 +1,4 @@
+2018.08.21-13.37.07 [UIPlayerHoldItemController] Log : 현재 소지한 자원 합 : 0
+2018.08.21-13.37.07 [UIWeatherEventController] Log : 현재 날씨 이벤트 : 현재 날씨는 맑습니다 / 
+2018.08.21-13.37.07 [UIMoveController] Log : 현재 Move : 5
+2018.08.21-13.37.07 [UITurnController] Log : 현재 Turn : 15

@@ -1,0 +1,2 @@
+2018.08.30-04.35.30 [GameDataLoader] Log : 로그인 성공
+2018.08.30-04.35.50 [GameDataLoader] Log : 로그인 성공

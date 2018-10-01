@@ -1,0 +1,2 @@
+2018.08.29-20.59.45 [GameDataLoader] Log : 비밀번호가 틀렸습니다
+2018.08.29-20.59.50 [GameDataLoader] Log : 로그인 성공

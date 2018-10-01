@@ -1,0 +1,1 @@
+2018.08.17-14.17.42 [DataManager] Log : AssetBundle을 위한 Data폴더 생성

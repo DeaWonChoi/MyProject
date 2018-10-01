@@ -1,0 +1,3 @@
+2018.07.30-14.56.57 [AssetBundleManager] Log : AssetBundle Directory 생성
+2018.07.30-14.56.57 [AssetBundleManager] Log : 다운로드 완료 57225Bytes
+2018.07.30-14.57.20 [AssetBundleManager] Log : 다운로드 완료 57225Bytes

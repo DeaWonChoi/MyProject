@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "322341850248",
+    "firebase_url": "https://redthesettlers.firebaseio.com",
+    "project_id": "redthesettlers",
+    "storage_bucket": "redthesettlers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322341850248:android:086919751f40b845",
+        "android_client_info": {
+          "package_name": "com.Company.ServerTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322341850248-7dlrcvd1ql4498dm4qb1fhbg6dpbjmcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHm616SrUUUi07pY5q7eOpe7vq6pFFCI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322341850248:android:16fe9b624de31e32",
+        "android_client_info": {
+          "package_name": "com.Company.TheSettlers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322341850248-7dlrcvd1ql4498dm4qb1fhbg6dpbjmcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHm616SrUUUi07pY5q7eOpe7vq6pFFCI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

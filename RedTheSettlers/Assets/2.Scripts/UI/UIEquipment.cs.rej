@@ -1,0 +1,10 @@
+diff a/RedTheSettlers/Assets/2.Scripts/UI/UIEquipment.cs b/RedTheSettlers/Assets/2.Scripts/UI/UIEquipment.cs	(rejected hunks)
+@@ -278,7 +278,7 @@
+                         firstAttackGroup.SetActive(false);
+                         firstAttackButton.interactable = false;
+                         secondAttackButton.interactable = true;
+-                        playerWeaponLevel++;
++                        playerAttackLevel++;
+                     }
+                     else if (level == 1)
+                     {

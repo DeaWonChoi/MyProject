@@ -1,0 +1,36 @@
+diff a/RedTheSettlers/Assets/2.Scripts/Camera/CameraController.cs b/RedTheSettlers/Assets/2.Scripts/Camera/CameraController.cs	(rejected hunks)
+@@ -33,27 +33,27 @@
+ 
+         [SerializeField]
+         GameCamera BoardGameCamera, BattleGameCamera, ActiveCamera;
++        Transform targetTransform;
+ 
+-        CameraStateType newCameraState;
+         CameraStateType cameraState;
++        CameraStateType nowCameraState;
+ 
+         Animator cloudAnimator;
+ 
+         [SerializeField]
+-        Vector3 playerVector3;
+         Transform playerTransform;
+-        //float ZoomValue;
+-        //Vector3 vector3; //배틀 카메라를 사용할때 비어있는 v3를 전달하기위해 선언함
++        float ZoomValue;
++        Vector3 vector3; //배틀 카메라를 사용할때 비어있는 v3를 전달하기위해 선언함
+ 
+         private void Start()
+         {
+             cloudAnimator = GameObject.FindWithTag("UICamera").GetComponentInChildren<Animator>();
+             BoardGameCamera = GameObject.FindWithTag("BoardCamera").GetComponent<GameCamera>();
+             BattleGameCamera = GameObject.FindWithTag("BattleCamera").GetComponent<GameCamera>();
+-            //playerTransform = GameObject.FindWithTag(GlobalVariables.TAG_PLAYER).transform;
++            playerTransform = GameObject.FindWithTag(GlobalVariables.TAG_PLAYER).transform;
+             ActiveCamera = BoardGameCamera;
+-            cameraState = CameraStateType.Idle;
+-            //vector3 = new Vector3();
++            nowCameraState = CameraStateType.Idle;
++            vector3 = new Vector3();
+         }
+ 
+         private void Update()

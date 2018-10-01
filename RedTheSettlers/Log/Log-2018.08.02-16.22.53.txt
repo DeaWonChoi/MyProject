@@ -1,0 +1,4 @@
+2018.08.02-16.22.53 [AssetBundleManager] Log : 해당 폴더가 이미 존재합니다.
+2018.08.02-16.22.53 [AssetBundleManager] Log : 다운로드 완료 66251Bytes
+2018.08.02-16.23.17 [AssetBundleManager] Log : 해당 폴더가 이미 존재합니다.
+2018.08.02-16.23.17 [AssetBundleManager] Log : 다운로드 완료 146856Bytes

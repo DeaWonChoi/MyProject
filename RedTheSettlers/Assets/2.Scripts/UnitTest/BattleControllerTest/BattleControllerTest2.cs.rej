@@ -1,0 +1,9 @@
+diff a/RedTheSettlers/Assets/2.Scripts/UnitTest/BattleControllerTest/BattleControllerTest2.cs b/RedTheSettlers/Assets/2.Scripts/UnitTest/BattleControllerTest/BattleControllerTest2.cs	(rejected hunks)
+@@ -4,7 +4,6 @@
+ 
+ namespace RedTheSettlers.UnitTest
+ {
+-    public delegate void BattleFinishCallback();
+     public class BattleControllerTest2 : MonoBehaviour
+     {
+         private float cattleResawnTime = 5; // test용

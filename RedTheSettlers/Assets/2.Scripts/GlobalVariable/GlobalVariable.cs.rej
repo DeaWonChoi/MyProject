@@ -1,0 +1,18 @@
+diff a/RedTheSettlers/Assets/2.Scripts/GlobalVariable/GlobalVariable.cs b/RedTheSettlers/Assets/2.Scripts/GlobalVariable/GlobalVariable.cs	(rejected hunks)
+@@ -43,6 +43,16 @@
+         Yes,
+     }
+ 
++    public enum GameState
++    {
++        EventController,
++        ItemController,
++        PlayerTurn,
++        AI1Turn,
++        AI2Turn,
++        AI3Turn,
++    }
++
+     public enum AssetBundleNumbers
+     {
+         Player,

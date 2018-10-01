@@ -1,0 +1,9 @@
+diff a/RedTheSettlers/Assets/2.Scripts/Managers/SoundManager.cs b/RedTheSettlers/Assets/2.Scripts/Managers/SoundManager.cs	(rejected hunks)
+@@ -81,7 +81,6 @@
+         {
+             //bgm 부분
+             if (!isChanging) return;
+-            
+             //재생중인 오디오의 볼륨을 낮춤
+             if(isEnd == false)
+             {
