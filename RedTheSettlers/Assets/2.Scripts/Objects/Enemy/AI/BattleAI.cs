@@ -43,7 +43,7 @@ namespace RedTheSettlers.Enemys
 
         public void AIUpdate()
         {
-            if(enemy.TargetObject != null)
+            if (enemy.TargetObject != null)
             {
                 enemyPosition = enemy.transform.position;
                 targetPosition = enemy.TargetObject.transform.position;
@@ -55,25 +55,25 @@ namespace RedTheSettlers.Enemys
 
                     if (enemy is BossEnemy)
                     {
-                        if (enemy.isAttackable[1])
-                        {
-                            enemy.ChangeState(EnemyStateType.Attack2);
-                        }
-                        else if (targetDistance < shortAttackLength && enemy.isAttackable[0])
-                        {
-                            enemy.ChangeState(EnemyStateType.Attack1);
-                        }
-                    }
-
-                    else if (enemy is NormalEnemy)
-                    {
-                        if (enemy.isAttackable[0])
+                        if (targetDistance < longAttackLength && enemy.isAttackable[0])
                         {
                             enemy.ChangeState(EnemyStateType.Attack1);
                         }
                         else if (targetDistance < shortAttackLength && enemy.isAttackable[1])
                         {
                             enemy.ChangeState(EnemyStateType.Attack2);
+                        }
+                    }
+
+                    else if (enemy is NormalEnemy)
+                    {
+                        if (targetDistance < longAttackLength && enemy.isAttackable[1]) 
+                        {
+                            enemy.ChangeState(EnemyStateType.Attack2);
+                        }
+                        else if (targetDistance < shortAttackLength && enemy.isAttackable[0])
+                        {
+                            enemy.ChangeState(EnemyStateType.Attack1);
                         }
                     }
                 } 

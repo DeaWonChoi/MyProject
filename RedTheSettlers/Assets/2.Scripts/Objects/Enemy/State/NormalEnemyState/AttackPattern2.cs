@@ -15,7 +15,7 @@ namespace RedTheSettlers.Enemys.Normal
 
         public AttackPattern2(EnemyFireBall fireBall, GameTimer fireballLifeTimer, Animator animator, 
             Transform transform, Rigidbody rigidbodyComponent, BattlePlayer targetObject, Vector3 position, 
-            float fireballSpeed, TimerCallback pushFireball, ChangeStateCallback changeStateCallback, float Power) : base(animator)
+            float fireballSpeed, TimerCallback pushFireball, ChangeStateCallback changeStateCallback, float Power) : base(animator, rigidbodyComponent)
         {
             this.fireBall = fireBall;
             this.fireballLifeTimer = fireballLifeTimer;
@@ -34,6 +34,7 @@ namespace RedTheSettlers.Enemys.Normal
             if (fireballLifeTimer == null)
             {
                 base.DoAction();
+               
 
                 Vector3 normalVector = (targetObject.transform.position - transform.position).normalized;
                 transform.rotation = Quaternion.LookRotation(normalVector);

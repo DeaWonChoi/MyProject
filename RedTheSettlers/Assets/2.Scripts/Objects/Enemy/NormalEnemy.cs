@@ -33,7 +33,7 @@ namespace RedTheSettlers.Enemys
                 case EnemyStateType.Attack1:
                     if (isAttackable[0])
                     {
-                        currentState = new Normal.AttackPattern1(animator, transform, TargetObject);
+                        currentState = new Normal.AttackPattern1(animator, transform, TargetObject, rigidbodyComponent);
 
                         isAttackable[0] = false;
                         Pattern1Timer = GameTimeManager.Instance.PopTimer();
